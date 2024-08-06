@@ -1,6 +1,3 @@
-
-
-
 const loadingPage = document.querySelector('.loading-page')
 const Back = document.querySelector('#go-back')
 
@@ -21,6 +18,14 @@ Back.addEventListener('click', () => {
 const playButton = document.querySelector('.lobby-button')
 
 window.addEventListener('load', () => {
+
+
+  anime({
+    targets: '.lobby-button',
+    scale: [1.75, 1.75],
+    duration: 2000,
+    easing: 'easeInOutExpo',
+  });
 
     document.querySelector('.lobby-button').classList.add('animate');
 
@@ -112,18 +117,14 @@ window.addEventListener('load', () => {
       easing: 'easeOutSine',
     });
 
-  anime({
+    anime({
       targets: '.lobby-button',
+      scale: [1.75, 5],
       opacity: [1, 0],
       duration: 400,
       easing: 'easeInOutExpo',
-      delay: 1900,
-    })
-
-    setTimeout(() => {
-      playButton.classList.add('animate-button')
-    }, 2000)
-
+      delay: 2000,
+    });
 
 
     setTimeout(() => {
@@ -136,7 +137,7 @@ window.addEventListener('load', () => {
           loadingPage.classList.add('off');
         }
       });
-    }, 2000);
+    }, 2200);
 
 });
 
