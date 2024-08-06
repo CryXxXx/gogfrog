@@ -115,7 +115,7 @@ window.addEventListener('load', () => {
   anime({
       targets: '.lobby-button',
       opacity: [1, 0],
-      duration: 350,
+      duration: 400,
       easing: 'easeInOutExpo',
       delay: 1900,
     })
@@ -136,7 +136,7 @@ window.addEventListener('load', () => {
           loadingPage.classList.add('off');
         }
       });
-    }, 2200);
+    }, 2000);
 
 });
 
