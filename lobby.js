@@ -9,7 +9,7 @@ Back.addEventListener('click', () => {
     duration: 500,
     easing: 'easeInOutExpo',
     complete: () => {
-      window.history.back();
+      window.history.back(true);
     }
   });
 })
