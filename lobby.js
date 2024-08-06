@@ -18,7 +18,7 @@ Back.addEventListener('click', () => {
 })
 
 
-
+const playButton = document.querySelector('.lobby-button')
 
 window.addEventListener('load', () => {
 
@@ -112,14 +112,17 @@ window.addEventListener('load', () => {
       easing: 'easeOutSine',
     });
 
-    anime({
+  anime({
       targets: '.lobby-button',
-      scale: 5,
       opacity: [1, 0],
-      duration: 400,
+      duration: 350,
       easing: 'easeInOutExpo',
-      delay: 2000,
+      delay: 1900,
     })
+
+    setTimeout(() => {
+      playButton.classList.add('animate-button')
+    }, 2000)
 
 
 
