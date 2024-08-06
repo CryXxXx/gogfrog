@@ -379,7 +379,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    scale: 1.75;
+    transform: scale(1.75)!important;
   }
   
   .lobby-button::before {
