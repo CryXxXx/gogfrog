@@ -482,12 +482,12 @@ body {
 }
 
 .lobby-button {
-    width: 51px;
-    height: 51px;
+    width: 47px;
+    height: 47px;
     border-radius: 50%; /* Скругление углов до круга */
     background-color: #1b1b1b;
-    border: 2px solid #1b1b1b;
-    box-shadow: inset 0 0 0 2px #20C859;
+    border: 2px solid #20C859;
+    box-shadow: 0 0 0 2px #1b1b1b;
     display: flex;
     position: absolute;
     justify-content: center;
