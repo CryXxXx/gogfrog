@@ -138,7 +138,7 @@ window.addEventListener('load', () => {
           loadingPage.classList.add('off');
         }
       });
-    }, 2200);
+    }, 2000);
 
 });
 
