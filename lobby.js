@@ -120,7 +120,7 @@ window.addEventListener('load', () => {
 
     anime({
       targets: '.lobby-button',
-      scale: [1.75, 5],
+      scale: [1.75, 8],
       opacity: [1, 0],
       duration: 400,
       easing: 'easeInOutExpo',
