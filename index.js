@@ -51,13 +51,18 @@ LobbyPage.addEventListener('click', () => {
     duration: 1000,
     easing: 'easeInOutExpo',
     delay: 160,
-  
+
+
+
     complete: () => {
       window.location.href = 'lobby.html';
     }
   })
-});
 
+  setTimeout(() => {
+    loadingPage.classList.add('off')
+  }, 200);
+});
 
 
 
