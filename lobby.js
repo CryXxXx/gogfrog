@@ -1,10 +1,7 @@
+
+
 const loadingPage = document.querySelector('.loading-page')
 const Back = document.querySelector('#go-back')
-
-function reloadPreviousPage() {
-  window.history.back();
-  location.reload(true);
-}
 
 Back.addEventListener('click', () => {
   loadingPage.classList.add('back');
@@ -13,10 +10,11 @@ Back.addEventListener('click', () => {
     opacity: 1,
     duration: 500,
     easing: 'easeInOutExpo',
-    complete: reloadPreviousPage
+    complete: () => {
+      window.history.go(-1);;
+    }
   });
 })
-
 
 const playButton = document.querySelector('.lobby-button')
 
