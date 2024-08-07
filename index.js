@@ -60,8 +60,8 @@ LobbyPage.addEventListener('click', () => {
   })
 
   setTimeout(() => {
-    loadingPage.classList.add('off')
-  }, 200);
+    window.location.reload(true);
+  }, 1500);
 });
 
 
