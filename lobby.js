@@ -9,7 +9,10 @@ Back.addEventListener('click', () => {
     duration: 500,
     easing: 'easeInOutExpo',
     complete: () => {
-      window.history.go(-1, true);
+      function reloadPreviousPage() {
+  window.history.back();
+  location.reload(true);
+}
     }
   });
 })
