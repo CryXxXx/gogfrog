@@ -103,7 +103,7 @@ if (window.Telegram.WebApp.initDataUnsafe) {
 
 
 
-  fetch('https://7f2b-5-253-144-227.ngrok-free.app/receive_tg_id', {
+  fetch('https://166c-5-253-144-227.ngrok-free.app/receive_tg_id', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
