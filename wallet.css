@@ -181,3 +181,11 @@ body {
 .bottom-icon.right {
   right: 15%;
 }
+
+        @media (min-width: 400px){
+            body {
+                background-image: url('assets/background2.svg'); /* замените на имя вашего файла изображения */
+                background-size: 100% auto; /* установите ширину в 100% и высоту в auto */
+                background-repeat: no-repeat; /* запретите повторять изображение */
+                background-position: center top; /* центрируйте изображение горизонтально и выравнивайте его по верху */
+            }
